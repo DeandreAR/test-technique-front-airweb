@@ -20,24 +20,24 @@ export class DataMobilityService {
       }))
   }
 
-  public getSelectedCategorie(id): Observable<any> {
+/*  public getSelectedCategorie(id): Observable<any> {
     return this.http.get(environment.airwebApi + 'categories/' + id ).pipe(
       map((result) => {
         return result;
       }))
-  }
+  }*/
 
   public getProducts(): Observable<any> {
-    return this.http.get(environment.airwebApi + 'categories').pipe(
+    return this.http.get(environment.airwebApi + 'products').pipe(
       map((result) => {
         return result;
       }))
   }
 
-  public getSelectedProduct(id): Observable<any> {
-    return this.http.get(environment.airwebApi + 'categories/' + id ).pipe(
+/*  public getSelectedProduct(id): Observable<any> {
+    return this.http.get(environment.airwebApi + 'products/' + id ).pipe(
       map((result) => {
         return result;
       }))
-  }
+  }*/
 }
