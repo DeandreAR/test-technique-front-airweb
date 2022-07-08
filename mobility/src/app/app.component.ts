@@ -26,6 +26,9 @@ export class AppComponent {
       this.productsResult = res;
       console.log('products',this.productsResult)
     });
-  }
 
+  }
+  addToShoppingCart() {
+    // window.open('http://localhost:4200/panier');
+  }
 }
