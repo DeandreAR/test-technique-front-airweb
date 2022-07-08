@@ -29,6 +29,6 @@ export class AppComponent {
 
   }
   addToShoppingCart() {
-    // window.open('http://localhost:4200/panier');
+/*    window.open('http://localhost:4200/panier');*/
   }
 }

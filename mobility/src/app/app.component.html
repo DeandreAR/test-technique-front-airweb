@@ -1,8 +1,12 @@
 <div class='main-container-catalog-page'>
   <h1 class="title-page">CATALOGUE</h1>
+
+<!--------  CATEGORIES -------------->
   <div class='container-category' *ngFor="let title of categoryResult">
     <h2 class='category-title'>{{title.label}}</h2>
     <ng-container *ngFor="let name of productsResult; let i = index">
+
+      <!--------  PRODUCTS -------------->
       <div class="container-product" *ngIf="title.id === name.category_id">
         <div class="container-product-left">
           <img class="thumbnail-url" src="{{name.thumbnail_url}}">
@@ -24,4 +28,4 @@
 <div></div>
 
 
-<router-outlet></router-outlet>
+
